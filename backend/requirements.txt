@@ -1,0 +1,10 @@
+express
+dotenv
+mongoose
+cors
+morgan
+bcryptjs
+jsonwebtoken
+
+# Dev dependencies
+nodemon
