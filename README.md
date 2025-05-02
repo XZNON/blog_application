@@ -1,81 +1,83 @@
-🧩 Full Stack Application
-A complete full-stack application with a Node.js + Express backend and a React + Vite frontend.
+<body>
+  <h1>🧩 Full Stack Application</h1>
+  <p>A complete full-stack application with a <strong>Node.js + Express</strong> backend and a <strong>React + Vite</strong> frontend.</p>
 
-🚀 How to Run Locally
-🛠 Prerequisites
-Make sure you have installed:
+  <h2>🚀 How to Run Locally</h2>
 
-Node.js (v18 or higher)
+  <h3>🛠 Prerequisites</h3>
+  <p>Make sure you have installed:</p>
+  <ul>
+    <li><strong>Node.js</strong> (v18 or higher)</li>
+    <li><strong>npm</strong> (comes with Node.js)</li>
+    <li><strong>MongoDB</strong> (local or cloud like MongoDB Atlas)</li>
+  </ul>
 
-npm (comes with Node.js)
-
-MongoDB (local or cloud like MongoDB Atlas)
-
-📁 Project Structure
-
+  <h3>📁 Project Structure</h3>
+  <pre><code>
 root/
 │
 ├── backend/   # Node.js + Express API
 └── frontend/  # React + Vite frontend
-⚙️ Backend Setup (/backend)
-Open your terminal and go to the backend/ directory:
+  </code></pre>
 
+  <h3>⚙️ Backend Setup (<code>/backend</code>)</h3>
+  <p>Open your terminal and go to the <code>backend/</code> directory:</p>
+  <pre><code>cd backend</code></pre>
 
-cd backend
-Install backend dependencies:
+  <p>Install backend dependencies:</p>
+  <pre><code>npm install</code></pre>
 
-
-npm install
-Create a .env file in the backend/ folder and add the following variables:
-
-
+  <p>Create a <code>.env</code> file in the <code>backend/</code> folder and add:</p>
+  <pre><code>
 PORT=8000
 MONGODB_URI=your_mongodb_connection_string
 JWT_SECRET=your_secret_key
-Start the backend server:
+  </code></pre>
 
-For development (with auto-reload):
+  <p>Start the backend server:</p>
+  <p><strong>For development (with auto-reload):</strong></p>
+  <pre><code>npm run dev</code></pre>
 
+  <p><strong>For production:</strong></p>
+  <pre><code>npm start</code></pre>
 
-npm run dev
-For production:
+  <p><strong>Backend runs at:</strong> 👉 <code>http://localhost:8000</code></p>
 
+  <h3>🎨 Frontend Setup (<code>/frontend</code>)</h3>
+  <p>Open another terminal, and go to the <code>frontend/</code> directory:</p>
+  <pre><code>cd frontend</code></pre>
 
-npm start
-By default, backend runs at:
-👉 http://localhost:8000
+  <p>Install frontend dependencies:</p>
+  <pre><code>npm install</code></pre>
 
-🎨 Frontend Setup (/frontend)
-Open another terminal, and go to the frontend/ directory:
+  <p>(Optional) Create a <code>.env</code> file inside frontend/ with:</p>
+  <pre><code>VITE_API_URL=http://localhost:8000/api</code></pre>
 
+  <p>Start the frontend development server:</p>
+  <pre><code>npm run dev</code></pre>
 
-cd frontend
-Install frontend dependencies:
+  <p><strong>Frontend runs at:</strong> 👉 <code>http://localhost:5173</code></p>
 
+  <h3>📦 Technologies Used</h3>
+  <ul>
+    <li><strong>Backend:</strong> Node.js, Express.js, MongoDB, Mongoose, JWT Authentication</li>
+    <li><strong>Frontend:</strong> React, Vite, Redux Toolkit, React Router DOM, Bootstrap 5</li>
+  </ul>
 
-npm install
-(Optional but recommended) Create a .env file inside frontend/ with:
+  <h3>📈 Deployment</h3>
+  <ul>
+    <li>Host frontend (Vercel, Netlify)</li>
+    <li>Host backend (Render, Railway, VPS, or custom server)</li>
+    <li>Connect frontend to the production API URL</li>
+  </ul>
 
+  <h3>📥 Requirements Installation</h3>
+  <p>Use the provided <code>requirements.txt</code> (for backend if using Python) or <code>package.json</code> to install dependencies:</p>
+  <ul>
+    <li><code>cd backend</code> → <code>npm install</code></li>
+    <li><code>cd frontend</code> → <code>npm install</code></li>
+  </ul>
 
-VITE_API_URL=http://localhost:8000/api
-Start the frontend development server:
-
-
-npm run dev
-By default, frontend runs at:
-👉 http://localhost:5173
-
-📦 Technologies Used
-Backend: Node.js, Express.js, MongoDB, Mongoose, JWT Authentication
-
-Frontend: React, Vite, Redux Toolkit, React Router DOM, Bootstrap 5
-
-📈 Deployment
-Host frontend (Vercel, Netlify)
-
-Host backend (Render, Railway, VPS, or server)
-
-Connect frontend to the production API URL.
-
-Install the requirements files in both backend and fronted.
-Use your own MONGODB URI for connecting to the server.
+  <p><strong>💡 Note:</strong> Always replace <code>MONGODB_URI</code> with your personal connection string for local or cloud MongoDB.</p>
+</body>
+</html>
